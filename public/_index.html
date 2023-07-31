@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!-- Layout.jsx START -->
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <script defer src="/js/bootstrap.bundle.min.js"></script>
+    <title>Высокая гора</title>
+  </head>
+  <body>
+    <!-- Layout.jsx END -->
+
+    <!-- Navbar.jsx START -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/img/logo.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Высокая Гора
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="/#login">войти</a>
+            <a class="nav-link" href="#">все листки</a>
+            <a class="nav-link" href="#">мои листки</a>
+            <a class="nav-link" href="/admin-users.html">пользователи</a>
+            <a class="nav-link" href="#">выход</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar.jsx END -->
+
+    <!-- Layout.jsx START -->
+    <div class="container">
+      <!-- Main.jsx START -->
+      <div class="content-wrapper">
+        <h1>
+          Привет! Это корпоративный портал ООО “Высокая Гора”. Чтобы получить
+          доступ к сайту - обратись в департамент HR.
+        </h1>
+      </div>
+      <!-- Main.jsx END -->
+
+      <!-- Login.jsx START -->
+      <div class="login-form-wrapper">
+        <h1>Вход</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Пароль</label>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  id="password"
+                  autocomplete="off"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary btn-green">
+                Войти
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Login.jsx END -->
+
+      <!-- CreateUser.jsx START -->
+      <div class="create-user-form-wrapper">
+        <h1>Добавить пользователя</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <form id="createUserForm">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="firstName" class="form-label">Имя</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  class="form-control"
+                  id="firstName"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="form-label">Фамилия</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  class="form-control"
+                  id="lastName"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="isAdmin" class="form-label">Роль</label>
+                <select name="isAdmin" id="isAdmin" class="form-select">
+                  <option selected value="0">пользователь</option>
+                  <option value="1">администратор</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="password" class="form-label">Пароль</label>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  id="password"
+                  autocomplete="off"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary btn-green">
+                Сохранить
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- CreateUser.jsx END -->
+
+      <!-- UpdateUser.jsx START -->
+      <div class="create-user-form-wrapper">
+        <h1>Редактировать пользователя</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <form id="updateUserForm">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="firstName" class="form-label">Имя</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  class="form-control"
+                  id="firstName"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="form-label">Фамилия</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  class="form-control"
+                  id="lastName"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="isAdmin" class="form-label">Роль</label>
+                <select name="isAdmin" id="isAdmin" class="form-select">
+                  <option selected value="0">пользователь</option>
+                  <option value="1">администратор</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="password" class="form-label">Пароль</label>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  id="password"
+                  autocomplete="off"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary btn-green">
+                Сохранить
+              </button>
+              <button type="button" class="btn btn-danger btn-red">
+                Удалить
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- UpdateUser.jsx END -->
+
+      <!-- UsersList.jsx START -->
+      <div class="users-list-wrapper">
+        <h1>Пользователи</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <button type="button" class="btn btn-primary btn-green">
+              Добавить пользователя
+            </button>
+            <div class="card user">
+              <a href="#1" class="card-link stretched-link"> Иван Иванов </a>
+              <a href="#2" class="card-edit-link position-relative"
+                >редактировать</a
+              >
+              <span>(admin)</span>
+            </div>
+            <div class="card user">
+              <a href="#1" class="card-link stretched-link"> Иван Иванов </a>
+              <a href="#2" class="card-edit-link position-relative"
+                >редактировать</a
+              >
+              <span>(admin)</span>
+            </div>
+            <div class="card user">
+              <a href="#1" class="card-link stretched-link"> Иван Иванов </a>
+              <a href="#2" class="card-edit-link position-relative"
+                >редактировать</a
+              >
+              <span>(admin)</span>
+            </div>
+            <div class="card user">
+              <a href="#1" class="card-link stretched-link"> Иван Иванов </a>
+              <a href="#2" class="card-edit-link position-relative"
+                >редактировать</a
+              >
+              <span>(admin)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- UsersList.jsx START -->
+
+      <!-- AllCheckLists.jsx START -->
+      <div class="lists-wrapper">
+        <h1>Листки</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="card user">
+              <a href="#1" class="card-link stretched-link"> Иван Иванов </a>
+              <span>70%</span>
+            </div>
+            <div class="card user">
+              <a href="#1" class="card-link stretched-link"> Иван Иванов </a>
+              <span>70%</span>
+            </div>
+            <div class="card user">
+              <a href="#1" class="card-link stretched-link"> Иван Иванов </a>
+              <span>70%</span>
+            </div>
+            <div class="card user">
+              <a href="#1" class="card-link stretched-link"> Иван Иванов </a>
+              <span>70%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- AllCheckLists.jsx START -->
+
+      <!-- MyCheckLists.jsx START -->
+      <div class="my-lists-wrapper">
+        <h1>Мои листки</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <button type="button" class="btn btn-primary btn-green">
+              Добавить шаблон
+            </button>
+            <div class="card user">
+              <a href="#1" class="card-link stretched-link"> Иван Иванов </a>
+              <a href="#2" class="card-edit-link position-relative"
+                >редактировать</a
+              >
+              <span>70%</span>
+            </div>
+            <div class="card user">
+              <a href="#1" class="card-link stretched-link"> Иван Иванов </a>
+              <a href="#2" class="card-edit-link position-relative"
+                >редактировать</a
+              >
+              <span>70%</span>
+            </div>
+            <div class="card user">
+              <a href="#1" class="card-link stretched-link"> Иван Иванов </a>
+              <a href="#2" class="card-edit-link position-relative"
+                >редактировать</a
+              >
+              <span>70%</span>
+            </div>
+            <div class="card user">
+              <a href="#1" class="card-link stretched-link"> Иван Иванов </a>
+              <a href="#2" class="card-edit-link position-relative"
+                >редактировать</a
+              >
+              <span>70%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MyCheckLists.jsx START -->
+    </div>
+  </body>
+</html>
+<!-- Layout.jsx END -->

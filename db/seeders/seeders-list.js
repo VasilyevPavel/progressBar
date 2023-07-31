@@ -1,0 +1,123 @@
+'use strict';
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up(queryInterface, Sequelize) {
+    await queryInterface.bulkInsert(
+      'CheckLists',
+      [
+        {
+          employName: 'Демитрий',
+          mentorName: 'Климент',
+          progress: 0,
+          userId: 2,
+          sid: 'jkhk4',
+          q1: true,
+          q2: false,
+          q3: true,
+          q4: false,
+          q5: false,
+          q6: false,
+          q7: false,
+          q8: false,
+          questionInputValue: '',
+          q9: false,
+          q10: false,
+          q11: false,
+          q12: false,
+        },
+        {
+          employName: 'Светослав',
+          mentorName: 'Антоанета',
+          progress: 0,
+          userId: 3,
+          sid: 'sdrfe',
+          q1: true,
+          q2: true,
+          q3: true,
+          q4: true,
+          q5: false,
+          q6: false,
+          q7: true,
+          q8: true,
+          questionInputValue: 'Света Геннадий',
+          q9: false,
+          q10: false,
+          q11: false,
+          q12: false,
+        },
+        {
+          employName: 'Милана',
+          mentorName: 'Ренат',
+          progress: 0,
+          userId: 3,
+          sid: 'sddfe',
+          q1: false,
+          q2: false,
+          q3: false,
+          q4: false,
+          q5: true,
+          q6: false,
+          q7: false,
+          q8: true,
+          questionInputValue: 'Геннадий Владлен',
+          q9: false,
+          q10: false,
+          q11: false,
+          q12: false,
+        },
+        {
+          employName: 'Вячеслав',
+          mentorName: 'Павел',
+          progress: 0,
+          userId: 4,
+          sid: 'sdqey',
+          q1: false,
+          q2: false,
+          q3: false,
+          q4: false,
+          q5: false,
+          q6: false,
+          q7: false,
+          q8: false,
+          questionInputValue: '',
+          q9: false,
+          q10: false,
+          q11: false,
+          q12: false,
+        },
+        {
+          employName: 'Ирина',
+          mentorName: 'Ольга',
+          progress: 0,
+          userId: 4,
+          sid: 'sdyld',
+          q1: false,
+          q2: true,
+          q3: false,
+          q4: false,
+          q5: true,
+          q6: false,
+          q7: false,
+          q8: true,
+          questionInputValue: 'Света Геннадий Владлен',
+          q9: false,
+          q10: false,
+          q11: false,
+          q12: false,
+        },
+      ],
+      {},
+    );
+  },
+
+  async down(queryInterface, Sequelize) {
+    /**
+     * Add commands to revert seed here.
+     *
+     * Example:
+     * await queryInterface.bulkDelete('People', null, {});
+     */
+    await queryInterface.bulkDelete('CheckLists', null, {});
+  },
+};

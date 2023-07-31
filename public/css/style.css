@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #7eb515;
+  --secondary-color: #4c5e66;
+  --greeen: #8bc923;
+  --grey1: #829399;
+  --grey2: #bfc5d2;
+  --grey3: #f1f5fe;
+  --danger-color1: #c92386;
+  --danger-color2: #d653a2;
+}
+
+h1 {
+  color: var(--secondary-color);
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-green {
+  background-color: var(--primary-color);
+  border: unset;
+}
+
+.btn-green:hover {
+  background-color: var(--greeen);
+}
+
+.btn-red {
+  background-color: var(--danger-color1);
+  border: unset;
+}
+
+.btn-red:hover {
+  background-color: var(--danger-color2);
+}
+
+.card-link {
+  color: var(--grey1);
+  text-decoration: none;
+}
+
+.card-edit-link {
+  z-index: 2;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.card-edit-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main-wrapper,
+.login-form-wrapper,
+.create-user-form-wrapper,
+.users-list-wrapper,
+.lists-wrapper,
+.my-lists-wrapper,
+.user {
+  color: var(--grey1);
+  margin: 20px 0 20px 0;
+}
+
+.main-wrapper h1,
+.login-form-wrapper h1,
+.create-user-form-wrapper h1,
+.users-list-wrapper h1,
+.lists-wrapper h1,
+.my-lists-wrapper h1 {
+  text-align: center;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 15px 0 15px 0;
+}
